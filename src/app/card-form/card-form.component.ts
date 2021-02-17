@@ -7,7 +7,7 @@ import { FormGroup,FormControl } from '@angular/forms';
   styleUrls: ['./card-form.component.css']
 })
 export class CardFormComponent implements OnInit {
-  cardform = new FormGroup({
+  cardForm = new FormGroup({
     name: new FormControl('')
   });
 
