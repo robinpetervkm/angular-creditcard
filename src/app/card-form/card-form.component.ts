@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup,FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-card-form',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-form.component.css']
 })
 export class CardFormComponent implements OnInit {
+  cardform = new FormGroup({
+    name: new FormControl('')
+  });
 
   constructor() { }
 
