@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormControl } from '@angular/forms';
+import { FormGroup,FormControl, Validator } from '@angular/forms';
 
 @Component({
   selector: 'app-card-form',
