@@ -1,7 +1,6 @@
 <form [formGroup]="cardForm">
   <input formControlName="name"/>
-</form>
-<ng-container *ngIf="cardForm.controls.name.dirty
+  <ng-container *ngIf="cardForm.controls.name.dirty
                       && cardForm.controls.name.touched
                       && cardForm.controls.name.errors">
   <div *ngIf="cardForm.controls.name.errors.required">
@@ -12,8 +11,11 @@
     {{cardForm.controls.name.errors.minlength.actualLength}}
     char long, it must be atleast
     {{cardForm.controls.name.errors.minlength.requiredLength}}
+    characters
   </div>
 </ng-container>
+</form>
+
 <hr/>
 <div> Form Contents: {{cardForm.value|json}}</div>
 <div> Form Valid: {{cardForm.valid}}</div>
