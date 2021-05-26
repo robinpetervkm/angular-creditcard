@@ -1,4 +1,4 @@
-<form [formGroup]="cardForm">
+<form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
 <app-input  label="Name" [control]="cardForm.get('name')"></app-input>
 <app-input  label="Card Number" [control]="cardForm.get('cardNumber')"></app-input>
 <app-input  label="Expiration" [control]="cardForm.get('expiration')"></app-input>
