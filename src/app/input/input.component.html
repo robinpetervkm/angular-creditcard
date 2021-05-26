@@ -1,5 +1,5 @@
-<input formControlName="name"/>
-  <ng-container *ngIf="cardForm.controls.name.dirty
+<input [formControl]="control"/>
+  <!-- <ng-container *ngIf="cardForm.controls.name.dirty
                       && cardForm.controls.name.touched
                       && cardForm.controls.name.errors">
   <div *ngIf="cardForm.controls.name.errors.required">
@@ -12,4 +12,4 @@
     {{cardForm.controls.name.errors.minlength.requiredLength}}
     characters
   </div>
-</ng-container>
+</ng-container> -->
