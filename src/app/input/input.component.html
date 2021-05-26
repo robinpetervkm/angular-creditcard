@@ -5,11 +5,11 @@
       class="input"
       [formControl]="control"
       [ngClass]="{
-        'is-danger': control.dirty && control.touched && control.errors
+        'is-danger': showErrors()
       }"
     />
   </div>
-  <ng-container *ngIf="control.dirty && control.touched && control.errors">
+  <ng-container *ngIf="showErrors()">
     <div *ngIf="control.errors.required">Value is required.</div>
     <div *ngIf="control.errors.minlength">
       Value you entered is
