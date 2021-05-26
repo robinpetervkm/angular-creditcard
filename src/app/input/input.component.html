@@ -10,21 +10,21 @@
     />
   </div>
   <ng-container *ngIf="showErrors()">
-    <div *ngIf="control.errors.required">Value is required.</div>
-    <div *ngIf="control.errors.minlength">
+    <div class="help is-danger" *ngIf="control.errors.required">Value is required.</div>
+    <div class="help is-danger" *ngIf="control.errors.minlength">
       Value you entered is
       {{ control.errors.minlength.actualLength }}
       char long, it must be atleast
       {{ control.errors.minlength.requiredLength }}
       characters
     </div>
-    <div *ngIf="control.errors.maxlength">
+    <div class="help is-danger" *ngIf="control.errors.maxlength">
       Value you entered is
       {{ control.errors.maxlength.actualLength }}
       char long, but it can't be longer than
       {{ control.errors.maxlength.requiredLength }}
       characters
     </div>
-    <div *ngIf="control.errors.pattern">Invalid Format</div>
+    <div class="help is-danger" *ngIf="control.errors.pattern">Invalid Format</div>
   </ng-container>
 </div>
