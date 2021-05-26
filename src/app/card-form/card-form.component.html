@@ -12,7 +12,9 @@
     label="Security Code"
     [control]="cardForm.get('securityCode')"
   ></app-input>
-  <button [disabled]="cardForm.invalid" class="submit">Submit</button>
+  <button class="button is-primary" [disabled]="cardForm.invalid" type="submit">
+    Submit
+  </button>
 </form>
 <hr />
 <div>Form Contents: {{ cardForm.value | json }}</div>
