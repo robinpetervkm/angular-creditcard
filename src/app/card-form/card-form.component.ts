@@ -13,7 +13,10 @@ export class CardFormComponent implements OnInit {
       Validators.minLength(3),
       Validators.maxLength(5),
       Validators.pattern(/\s/)
-    ])
+    ]),
+    cardNumber:new FormControl('',[]),
+    expiration:new FormControl('',[]),
+    securityCode:new FormControl('',[])
   });
 
   constructor() {
