@@ -3,7 +3,7 @@
 <app-input  label="Card Number" [control]="cardForm.get('cardNumber')"></app-input>
 <app-input  label="Expiration" [control]="cardForm.get('expiration')"></app-input>
 <app-input  label="Security Code" [control]="cardForm.get('securityCode')"></app-input>
-<button class="submit">Submit</button>
+<button [disabled]="cardForm.invalid" class="submit">Submit</button>
 </form>
 
 <hr/>
