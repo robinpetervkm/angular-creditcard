@@ -12,4 +12,11 @@
     {{control.errors.minlength.requiredLength}}
     characters
   </div>
+  <div *ngIf="control.errors.maxlength">
+    Value you entered is
+    {{control.errors.maxlength.actualLength}}
+    char long, but it can't be longer than
+    {{control.errors.maxlength.requiredLength}}
+    characters
+  </div>
 </ng-container>
